@@ -9,7 +9,7 @@
                 </div>
                 
                 <form>
-                    <div class="mb-3">
+                    <div class="col mb-3">
                       <label for="email" class="form-label">Email address</label>
                       <input type="email" class="form-control" id="email" formControlName="email">
                       <div class="form-text text-danger" *ngIf="Email.errors?.['required'] && (Email.dirty || Email.touched)">
@@ -17,18 +17,21 @@
                       </div>
                       
                     </div>
-                    <div class="mb-3">
+                    <div class="col mb-3">
                       <label for="pwd" class="form-label">Password</label>
                       <input type="password" class="form-control" id="pwd" formControlName="pwd">
                     </div>
+                    <div class="form-text text-danger" *ngIf="PWD.errors?.['required'] && (PWD.dirty || PWD.touched)">
+                      Password is Requi
+                    </div>
                     <div class="form-text text-danger"
-                    *ngIf="PWD.errors?.['minlength'] || PWD.errors?.['maxlength'] && (PWD.dirty || PDW.touched)">
+                        *ngIf="PWD.errors?.['minlength'] || PWD.errors?.['maxlength'] && (PWD.dirty || PDW.touched)">
                     Password should be at least 6 and at the max 15 characters long.
                     </div>
-                    <button type="submit" class="btn btn-primary">Login</button>
+                      <button type="submit" [disabled]="false" class="btn btn-primary">Login</button>
                   </form>
             </div>
         </div>
     </div>
 </div> 
-</form>
+</form> 

@@ -7,3 +7,41 @@
     color: var(--primary-color);
     text-decoration: underline;
 }
+
+body{
+    background-color:#ffffff;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.button-div{
+    width:120px;
+    height:20px;
+    border:2px solid rgb(255, 255, 255);
+    background-color:var(--primary-color);;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:7px;
+    padding:7px;
+}
+
+.login-button{
+    margin-left: 1em;
+    width:88px;
+    height:44px;
+    border:none;
+    border-radius:5px;
+    font-size:17px;
+    font-weight:600;
+    color:#fff;
+    background-color:var(--primary-color);;
+    cursor:pointer;
+}
+
+.login-button:hover{
+    
+    background-color:#199438db;
+}

@@ -1,0 +1,27 @@
+.card
+{
+    border: none;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: hsla(205, 46%, 30%, 1);
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #12eb65);
+}
+
+.card h1,
+h6 {
+    color:#fff;
+}
+
+label
+{
+    color:#fff;
+}
+
+.form-text
+{
+    color:rgb(207, 207, 207);
+}
